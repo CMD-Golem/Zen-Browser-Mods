@@ -1,0 +1,25 @@
+/* https://www.reddit.com/r/zen_browser/comments/1f8o7bp/tip_how_to_move_the_create_new_tab_button_at_the/ */
+@-moz-document url("chrome://browser/content/browser.xhtml") {
+	/* Move create new tab button at the bottom of the tabs */
+	#tabbrowser-tabs .tab-drop-indicator {
+		order: 1;
+	}
+	#tabbrowser-tabs #vertical-pinned-tabs-container {
+		order: 2;
+	}
+	#tabbrowser-tabs #tabbrowser-arrowscrollbox {
+		order: 3;
+		margin-bottom: unset !important;
+	}
+	#tabbrowser-tabs #newtab-button-container {
+		order: 4;
+		padding-top: 0 !important;
+	}
+	#tabbrowser-tabs #newtab-button-container::before {
+		display: none !important;
+	}
+	/* Un-highlight the create new tab button */
+	#vertical-tabs-newtab-button:not(:hover) {
+		background: unset !important;
+	}
+}

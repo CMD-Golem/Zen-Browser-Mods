@@ -1,0 +1,78 @@
+/*
+
+Works for these settings:
+- Look and Feel
+	- Use legacy toolbar position
+- Sidebar and tabs layout
+	- Expand Tabs by Default
+
+*/
+
+@-moz-document url("chrome://browser/content/browser.xhtml") {
+	/* make links which are normally there invisble, but keep it for scrollbar of tabs */
+	#zen-sidebar-icons-wrapper {
+		visibility: hidden; /* Make element temporarly visible and align horizontal lines */
+		height: 79px; /* bookmark height (default 79px) */
+	}
+
+	/* Move bookmarks down */
+	#PersonalToolbar {
+		position: fixed;
+		bottom: 7px;
+		width: 162px; /* Tabbar width (default 162px) */
+		max-height: unset !important;
+		 padding-left: 2.5px !important;
+		padding-right: 5px !important;
+		z-index: 500 !important;
+		/* border-right: 1px solid red !important; /* Make temporarly active and align it with browser window border */
+	}
+
+	/* Warp Bookmarks */
+	#PlacesToolbarItems {
+		flex-wrap: wrap;
+	}
+	
+	/* Horizontal line */
+	#PlacesToolbarItems:before {
+		content: '';
+		width: calc(100% - 4px);
+		height: 1px;
+		margin-bottom: 1px;
+		background: var(--zen-colors-border);
+		margin-left: 2px;
+	}
+
+	/* Style Bookmark items */
+	toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder) {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		height: 36px !important;
+		border: 2px solid transparent;
+		padding: 10px !important;
+		margin: 2px !important;
+		flex: 1;
+		border-radius: 8px !important;
+		background: color-mix(in srgb, var(--button-hover-bgcolor) 40%, transparent 60%) !important;
+	}
+	toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder):hover {
+		background: var(--toolbarbutton-hover-background) !important;
+	}
+	
+	.toolbarbutton-icon {
+		margin-inline-end: unset !important;
+	}
+	.toolbarbutton-text {
+		padding-left: 10px !important;
+	}
+	
+	/* Center bookmarks without images */
+	.toolbarbutton-text[value=""] {
+		display: none !important;
+	}
+
+	/* Hide open all in tabs*/
+	.bookmarks-actions-menuseparator, .openintabs-menuitem {
+		display: none;
+	}
+}
