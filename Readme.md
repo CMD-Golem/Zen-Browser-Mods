@@ -4,3 +4,5 @@ To live edit it go to about:config in Zen and set devtools.debugger.remote-enabl
 Afterwards the shortcut Ctrl + Shift + Alt + I can be used to open the browser devtools
 
 [Mod settings](https://docs.zen-browser.app/themes-store/themes-marketplace-preferences)
+[Natsumi](https://github.com/greeeen-dev/natsumi-browser/tree/main)
+[Floating Status Bar](https://github.com/AmirhBeigi/zen-floating-statusbar)
