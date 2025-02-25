@@ -2,7 +2,7 @@
 @import "clean_bookmarks.css";
 
 /* Hide Workspace */
-#zen-current-workspace-indicator {
+#zen-current-workspace-indicator-container {
 	display: none !important;
 }
 
