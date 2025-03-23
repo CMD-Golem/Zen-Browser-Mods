@@ -49,8 +49,7 @@ toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placehold
 
 /* Expand bookmarks with text */
 toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder):not([label=""]) {
-	grid-column-start: 1;
-	grid-column-end: 3;
+	grid-column: auto / span 2;
 }
 toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder):not([label=""]) image {
 	margin-left: 5px;
