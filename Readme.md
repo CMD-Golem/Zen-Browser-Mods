@@ -18,7 +18,7 @@ You can change the amount of columns by editing `clean_bookmarks.css` on line 16
 [Quietify](https://github.com/wysh3/Zen-Mods/tree/main/Quietify)
 
 ## Configuration
-To live edit it go to about:config in Zen and set devtools.debugger.remote-enabled to true
+To live edit it go to about:config in Zen and set devtools.debugger.remote-enabled and devtools.chrome.enabled to true
 Afterwards the shortcut Ctrl + Shift + Alt + I can be used to open the browser devtools
 
 [Mod settings](https://docs.zen-browser.app/themes-store/themes-marketplace-preferences)

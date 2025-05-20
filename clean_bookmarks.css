@@ -1,15 +1,22 @@
 /* IMPORTANT: See the readme.md for the necessary setup */
 /* Remove default styles */
 #personal-bookmarks {
-	padding: 0 !important;
-}
-#personal-bookmarks:hover {
-	background-color: transparent !important;
+	width: 100%;
 }
 .toolbarbutton-text[value=""] {
 	display: none !important;
 }
-
+#zen-sidebar-top-buttons {
+	max-height: unset !important;
+	min-height: unset !important;
+	height: unset !important;
+}
+:root:not([zen-compact-mode="true"]) #zen-sidebar-top-buttons {
+	margin-top: calc( var(--zen-toolbar-height) - 2px );
+}
+#zen-sidebar-top-buttons-customization-target {
+	height: unset !important;
+}
 
 /* Warp Bookmarks */
 #PlacesToolbarItems {
@@ -24,19 +31,17 @@
 
 #PlacesToolbar:after {
 	content: '';
-	width: calc(100% - 3px);
+	width: 96%;
 	height: 1px;
-	margin-top: 5px;
-	margin-bottom: 8px;
+	margin: 7px 2%;
 	display: block;
-	height: 1px;
 	background: light-dark(rgba(1, 1, 1, 0.075), rgba(255, 255, 255, 0.1));
 }
 
 /* Style Bookmark items */
 toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder) {
 	height: 36px !important;
-	width: calc(100% -1px) !important;
+	max-width: unset !important;
 	background-color: var(--tab-hover-background-color) !important;
 }
 toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder) image {
@@ -45,6 +50,7 @@ toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placehold
 }
 toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder):hover {
 	background-color: var(--tab-selected-bgcolor) !important;
+	
 }
 
 /* Expand bookmarks with text */
