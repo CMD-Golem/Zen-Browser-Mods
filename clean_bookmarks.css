@@ -12,7 +12,7 @@
 	height: unset !important;
 }
 :root:not([zen-compact-mode="true"]) #zen-sidebar-top-buttons {
-	margin-top: calc( var(--zen-toolbar-height) - 2px );
+	padding-top: calc( var(--zen-toolbar-height) - 2px ) !important;
 }
 #zen-sidebar-top-buttons-customization-target {
 	height: unset !important;
