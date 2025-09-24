@@ -4,11 +4,11 @@ The userChrome.css file is stored in the Zen Profile folder, normally located un
 Show bookmarks in the sidebar. By default bookmarks are shown in three columns. Bookmarks with labels have a width of two columns.<br>
 ![Clean Bookmarks](assets/clean-bookmarks.png)
 
-To use this "mod" you need to edit the `userChrome.css` and paste the code from `clean_bookmarks.css` into it. In Zen you need to enable `Show bookmarks toolbar` and go into the `Customize Toolbar` menu and move the `Bookmarks toolbar items` to your desired location in the sidebar.
+To use this "mod" you need to edit the `userChrome.css` and paste the code from `clean_bookmarks.css` into it. In Zen you need to go to about:config and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`. Afterwards you need to enable `Show bookmarks toolbar` in the Bookmarks menu and then go into the `Customize Toolbar` menu and move the `Bookmarks toolbar items` to your desired location in the sidebar.
 
 ![Move Bookmarks toolbar items](assets/clean-bookmarks-customize.png)
 
-You can change the amount of columns by editing `clean_bookmarks.css` on line 16 with `grid-template-columns` and replace 3 with the desired number.
+You can change the amount of columns by editing `clean_bookmarks.css` on line 24 with `grid-template-columns` and replace 3 with the desired number.
 
 ## Forked CSS
 [Natsumi](https://github.com/greeeen-dev/natsumi-browser/tree/main)

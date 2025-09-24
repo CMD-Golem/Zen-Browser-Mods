@@ -30,6 +30,7 @@
 #context_closeDuplicateTabs,
 #context_closeTabOptions,
 #context_undoCloseTab,
-#context_zenUnloadTab {
+#context_zenUnloadTab,
+#context_reopenInContainer {
 	display: none !important;
 }
