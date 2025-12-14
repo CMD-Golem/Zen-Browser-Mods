@@ -18,6 +18,10 @@
 	height: unset !important;
 }
 
+:root[customizing] #TabsToolbar-customization-target {
+  visibility: visible !important;
+}
+
 /* Warp Bookmarks */
 #PlacesToolbarItems {
 	display: grid;
@@ -29,7 +33,7 @@
 	flex-direction: column;
 }
 
-#PlacesToolbar:after {
+#navigator-toolbox:has(zen-workspace[active="true"] .zen-workspace-pinned-tabs-section tab) #PlacesToolbar:after {
 	content: '';
 	width: 96%;
 	height: 1px;
@@ -64,5 +68,10 @@ toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placehold
 
 /* Hide open all in tabs*/
 .bookmarks-actions-menuseparator, .openintabs-menuitem {
+	display: none;
+}
+
+/* Hide bookmarks when im compact mode */
+html[zen-compact-mode="true"] #personal-bookmarks {
 	display: none;
 }

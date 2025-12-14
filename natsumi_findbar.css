@@ -2,7 +2,7 @@
 
 Natsumi Browser - A userchrome for Zen Browser that makes things flow.
 
-Copyright (c) 2024-present Green (@greeeen-dev)
+Copyright (c) 30.12.2024 Green (@greeeen-dev)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -86,6 +86,7 @@ their author(s) have been provided above the used code.
 		.findbar-closebutton {
 			outline: none !important;
 			order: 1;
+			width: 40px !important;
 		}
 
 		.findbar-container {
@@ -141,17 +142,18 @@ their author(s) have been provided above the used code.
 			}
 
 			.findbar-label {
-				display: flex;
-				flex-basis: 100% !important;
-
-				&:is([hidden="true"]) {
-					display: none;
-				}
+				display: none;
 			}
 
 			.found-matches {
+				display: flex;
+				flex-basis: 100% !important;
 				font-size: 14px !important;
 				margin-top: 10px !important;
+
+				&:is([hidden=""]) {
+					display: none;
+				}
 
 				&:not([hidden]) {
 					&::before {
