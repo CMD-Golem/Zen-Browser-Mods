@@ -64,9 +64,9 @@ their author(s) have been provided above the used code.
 }
 
 /* For testing */
-#viewerContainer {
+/*#viewerContainer {
 	background-color: white !important;
-}
+}*/
 	
 @media not (-moz-bool-pref: "natsumi.pdfjs.disabled") {
 	html[mozdisallowselectionprint] {
@@ -184,9 +184,7 @@ their author(s) have been provided above the used code.
 			#viewsManager {
 				height: calc(100vh - 81px) !important;
 				left: -1px !important;
-				/*top: auto !important;*/
 				bottom: 5px !important;
-				/*opacity: 0 !important;*/
 				transition: left 0.2s ease, visibility 0.2s ease !important;
 				border: 1px solid rgba(20, 20, 20, 0.2) !important;
 		
@@ -198,11 +196,19 @@ their author(s) have been provided above the used code.
 					display: none !important;
 				}
 				
+				#viewsManagerTitle {
+					padding: 12px !important;
+				}
+				
+				#viewsManagerSelector {
+					height: unset !important;;
+				}
+				
 				#viewsManagerSelectorOptions {
 					display: flex !important;
 					flex-direction: row !important;
 					position: static !important;
-					padding: 5px;
+					padding: 0 !important;
 					background-color: transparent !important;
 					border: none !important;
 					min-width: unset !important;
@@ -235,59 +241,10 @@ their author(s) have been provided above the used code.
 						}
 					}
 				}
-		
-				/*#toolbarSidebar {
-					background: transparent !important;
-					box-shadow: none !important;
-					padding: 5px !important;
-					height: calc(var(--toolbar-height) + 10px) !important;
+				
+				#viewsManagerContent .thumbnail::after {
+					height: 20px !important;
 				}
-		
-				#sidebarContent {
-					margin-top: 10px !important;
-					box-shadow: none !important;
-				}
-		
-				.viewsManagerHeader {
-					a, .treeItems {
-						border-radius: 5px !important;
-						transition: background-color 0.2s ease;
-					}
-		
-					.treeItemToggler {
-						&::before {
-							background-color: transparent !important;
-							mask-image: none !important;
-							background-image: url('chrome://browser/skin/zen-icons/arrow-down.svg') !important;
-			
-							@media (prefers-color-scheme: dark) {
-								filter: invert();
-							}
-						}
-			
-						&.treeItemsHidden::before {
-							background-image: url('chrome://browser/skin/zen-icons/arrow-right.svg') !important;
-						}
-					}
-				}
-		
-				.thumbnail {
-					margin-bottom: 22px !important;
-					transition: border-color 0.2s ease;
-			
-					&::after {
-						content: attr(data-page-number);
-						display: block;
-						color: black;
-						width: 100%;
-						margin-top: 8px;
-						text-align: center;
-			
-						@media (prefers-color-scheme: dark) {
-							color: white;
-						}
-					}
-				}*/
 			}
 		
 			#outerContainer.sidebarOpen #viewsManager {
