@@ -31,6 +31,10 @@
 #context_closeTabOptions,
 #context_undoCloseTab,
 #context_zenUnloadTab,
-#context_reopenInContainer {
+#context_reopenInContainer,
+#zen-context-menu-new-folder,
+#context_zen-edit-tab-title,
+#context_zen-edit-tab-icon,
+.share-tab-url-item {
 	display: none !important;
 }
