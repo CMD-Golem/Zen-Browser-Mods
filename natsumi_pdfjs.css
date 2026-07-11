@@ -223,6 +223,7 @@ their author(s) have been provided above the used code.
 							height: 35px !important;
 							display: flex;
 							justify-content: center;
+							padding-inline: 0 !important;
 						}
 						
 						button::before {

@@ -35,6 +35,8 @@
 #zen-context-menu-new-folder,
 #context_zen-edit-tab-title,
 #context_zen-edit-tab-icon,
+#context_sendTabToDevice,
+#context_zen-add-domain-to-routing,
 .share-tab-url-item {
 	display: none !important;
 }
