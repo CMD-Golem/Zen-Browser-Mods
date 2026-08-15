@@ -1,3 +1,5 @@
+Themes for [Zen Browser](https://github.com/zen-browser/desktop).
+
 The userChrome.css file is stored in the Zen Profile folder, normally located under %appdata%\zen\Profiles\xy\chrome
 
 ## Clean Bookmarks
@@ -11,13 +13,13 @@ To use this "mod" you need to edit the `userChrome.css` and paste the code from 
 You can change the amount of columns by editing `clean_bookmarks.css` on line 24 with `grid-template-columns` and replace 3 with the desired number.
 
 ## Forked CSS
-[Natsumi](https://github.com/greeeen-dev/natsumi-browser/tree/main)
+[Natsumi](https://github.com/greeeen-dev/natsumi-browser/)
 
 [Floating Status Bar](https://github.com/AmirhBeigi/zen-floating-statusbar)
 
 [Quietify](https://github.com/wysh3/Zen-Mods/tree/main/Quietify)
 
-## Configuration
+## Editing
 To live edit it go to about:config in Zen and set devtools.debugger.remote-enabled and devtools.chrome.enabled to true
 Afterwards the shortcut Ctrl + Shift + Alt + I can be used to open the browser devtools
 

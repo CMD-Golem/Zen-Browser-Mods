@@ -70,7 +70,7 @@ their author(s) have been provided above the used code.
 	
 @media not (-moz-bool-pref: "natsumi.pdfjs.disabled") {
 	html[mozdisallowselectionprint] {
-		&:has(head link:nth-of-type(1)[href^="resource://pdf.js"]) {
+		&:has(head link[href^="resource://pdf.js"]) {
 			--natsumi-colors-border: color-mix(in srgb, var(--natsumi-colors-secondary) 80%, black 20%);
 			--toolbarbutton-active-background: rgba(255, 255, 255, 0.9);
 			--toolbarbutton-hover-background: color-mix(in srgb, #202020 10%, transparent);
