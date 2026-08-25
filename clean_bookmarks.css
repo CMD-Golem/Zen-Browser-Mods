@@ -46,14 +46,14 @@
 toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder) {
 	height: 36px !important;
 	max-width: unset !important;
-	background-color: var(--tab-hover-background-color) !important;
+	background-color: #1e1e24 !important;
 }
 toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder) image {
 	width: 18px !important;
 	height: 18px !important;
 }
 toolbarbutton.bookmark-item:not(.subviewbutton):not(#bookmarks-toolbar-placeholder):hover {
-	background-color: var(--tab-selected-bgcolor) !important;
+	background-color: #2A2A31 !important;
 	
 }
 
