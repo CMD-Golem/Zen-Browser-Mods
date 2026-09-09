@@ -58,7 +58,7 @@ their author(s) have been provided above the used code.
 @media not (-moz-bool-pref: "natsumi.findbar.disabled") {
 	/*noinspection CssInvalidFunction*/
 	findbar {
-		position: absolute;
+		position: fixed;
 		top: 20px;
 		width: min(550px, 90%);
 		right: 20px;
